@@ -1,0 +1,23 @@
+---
+- name: install Apache webserver
+  hosts: servers
+  tasks:
+    - name: Update and upgrade apt packages
+      yum:
+        update_cache: yes
+      tags:
+        - always
+
+    - name: install Apache on Ubuntu
+      yum:
+        name: "httpd"
+        state: "latest"
+      tags:
+        - install_apache
+
+    - name: Restart Apache Webserver
+      service:
+        name: httpd
+        state: restarted
+      tags:
+        - restart_apache
