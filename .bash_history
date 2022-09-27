@@ -664,3 +664,31 @@ ansible-playbook dbserver.yml
 cat site.yml 
 vi site.yml 
 ansible-playbook site.yml 
+ls
+cd test
+ls
+cd roles/
+cd DCE/
+ls
+cd fooapp/
+ls
+cd tasks/
+ls
+clear
+cat main.yml 
+ls
+git init
+git remote add origin https://github.com/maruthisbvv/ansiblle-tags.git
+git branch -M main
+git status
+git add test .
+git add test 
+git commit -m "tags"
+ls
+rmdir -rf ansible-labs/
+rmdir -r ansible-labs/
+rmdir ansible-labs/
+rmdir -f ansible-labs/
+rm fir --help
+ls
+git add .
